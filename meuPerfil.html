@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EventPlanet - Gestão de Eventos Intergalácticos</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+   <!-- Header -->
+   <header class="header">
+    <a href="#h" class="logo">Event <span>Planet</span></a>
+
+    <nav class="navbar">
+      <a href="paginaInicial.html">Home</a>
+      <a href="#">Clientes</a>
+      <a href="#">Calendario</a>
+      <a href="#">Configuração</a>
+    </nav>
+    <!-- Barra de Pesquisa-->
+    <form class="search-bar" action="#" method="get">
+      <input type="text" placeholder="Buscar..." name="search" />
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+
+    <!-- Meu perfil -->
+    <nav class="navbar" id="perfil"><a href="meuPerfil.html">meu perfil</a></nav>
+    </header>
+
+    <section>
+        <h2><i class="fa-solid fa-chart-pie"></i> Dashboard</h2>
+
+        <div class="box-info">
+            <div class="box-info-single arrecadado">
+                <div class="info-text">
+                    <p>Valor Arrecadado</p>
+                    <p>R$ 100.000</p>
+                </div>
+                <i class="fa-solid fa-money-check-dollar"></i>
+            </div>
+
+            <div class="box-info-single eventos">
+                <div class="info-text">
+                    <p>Eventos Realizados</p>
+                    <p>20</p>
+                </div>
+                <i class="fa-solid fa-check"></i>
+            </div>
+
+            <div class="box-info-single publico">
+                <div class="info-text">
+                    <p>Público Alcançado</p>
+                    <p>5.000</p>
+                </div>
+                <i class="fa-solid fa-people-group"></i>
+            </div>
+            
+            <div class="box-info-single avaliacao">
+                <div class="info-text">
+                    <p>Avaliação Pós-Evento (Média)</p>
+                    <p>9,5</p>
+                </div>
+                <i class="fa-solid fa-star"></i>
+            </div>
+        </div>
+
+    </section>
+            
+    <!-- Contato -->
+    <section class="contact">
+        <h2><i class="fa-regular fa-pen-to-square"></i> Meus Eventos</h2>
+
+        <form action="#">
+          <div class="input-box">
+            <h3>Nome do Evento</h3>
+            <input type="text" placeholder="Nome do Evento" />
+            <h3>Local do Evento</h3>
+            <input type="text" placeholder="local do Evento" />
+          </div>
+          <h3>Descrição</h3>
+          <textarea name="" cols="30" rows="5" placeholder="Descrição..."></textarea>
+          <input type="submit" value="Adicionar" class="btn"/>
+        </form>
+
+        <h2><i class="fa-solid fa-table-list"></i> Tabela de Eventos</h2>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Nome Evento</th>
+                    <th>Local</th>
+                    <th>Selecione</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Exemplo 1</td>
+                    <td>Concordia</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>Exemplo 2</td>
+                    <td>Concordia</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>Exemplo 3</td>
+                    <td>Concordia</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+            </tbody>
+        </table>
+        <input type="submit" value="Excluir Selecionados" class="btn" id="excluir"/>        
+    </section>
+
+    <section id="events">
+        <h2><i class="fa-solid fa-circle-info"></i> Informações</h2>
+
+        <hr class="line">
+
+        <h3>Evento 1</h3>
+        <p>Local: Concordia</p>
+        </div>
+        <div>
+            <p>
+                <span>Status:</span>
+                <strong>Publicado</strong>
+            </p>
+            <p>
+                <span>Status:</span>
+                <strong>Venda disponivel</strong>
+            </p>
+            <div class="ls-txt-right">
+                <a href="#" class="btn">Saiba mais</a>
+            </div>
+        </div>
+        
+        <hr class="line">
+
+        <div>
+            <div>
+                <h3>Evento 2</h3>
+                <p>Local: Concordia</p>
+            </div>
+            <div>
+                <p>
+                    <span>Status:</span>
+                    <strong>Publicado</strong>
+                </p>
+                <p>
+                    <span>Status:</span>
+                    <strong class="esgotado">Esgotado</strong>
+                </p>
+                <div class="ls-txt-right">
+                    <a href="#" class="btn">Saiba mais</a>
+                </div>
+            </div>
+        </div>
+
+        <hr class="line">
+
+        <div>
+
+            <div>
+                <h3>Evento 3</h3>
+                <p>Local: Concordia</p>
+            </div>
+            <div>
+                <p>
+                    <span>Status:</span>
+                    <strong>Publicado</strong>
+                </p>
+                <p>
+                    <span>Status:</span>
+                    <strong class="venda-insuficiente">Vendas Insufientes</strong>
+                </p>
+                <div class="ls-txt-right">
+                    <a href="#" class="btn">Saiba mais</a>
+                </div>
+            </div>
+        </div>
+        <hr class="line">
+    </section>
+
+    <footer class="footer">
+        <p class="copyright">
+          Siga-nos nas redes sociais para acompanhar nossos eventos e dicas de gestão!
+        </p>
+        <div class="social">
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        </div>
+        <p class="copyright">© 2024 Odysseia Estrelar | Todos os direitos reservados.</p>
+      </footer>
+</body>
+
+</html>
